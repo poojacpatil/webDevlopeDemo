@@ -1,0 +1,24 @@
+#p1 {
+    background-color: aqua;
+    font-size: 40px;
+}
+/*div{*/
+background-color:darkviolet;
+font-size:30px;
+color:white;
+}
+
+#p2 {
+    background-color: brown;
+}
+
+.center-alignmemt {
+    text-align: center;
+}
+
+div {
+    background-color: red;
+    margin: 21px 20px 10px 20px;
+    border: 2px solid;
+    padding: 10px 10px 15px 15px;
+}

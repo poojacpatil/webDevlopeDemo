@@ -1,0 +1,95 @@
+nav {
+    background-color:#33FFFF;
+    height: 48px;
+    width:100%;
+    position:sticky;
+    z-index:2;
+    top:0;
+
+}
+
+#menu {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+}
+
+    #menu li {
+        margin-right: 30px;
+    }
+
+        #menu li a {
+            text-decoration: none;
+        }
+
+#banner {
+    position:relative;
+    margin-top: 5px;
+    background-image: url("nature2.jpg");
+    height: 300px;
+    width: 100%;
+    background-position: bottom;
+}
+#banner h1{
+    position:absolute;
+    top:120px;
+    left:84px;
+}
+.left-panel{
+    position:relative;
+    height:400px;
+    background:gray;
+    width:20%;
+    top:-12px;
+}
+.left-panel ul{
+    list-style:none;
+    display:black;
+}
+.left-panel ul li{
+    position:relative;
+    top:18px;
+    padding-top:14px;
+}
+.main-content{
+    position:relative;
+    height:200px;
+    top:-100px;
+    margin-left:248px;
+    width:77%;
+    overflow-y:auto;
+}
+table td{
+    width:36%;
+}
+.footer{
+    position:relative;
+    height:67px;
+    background:;
+   margine-top:-381px;
+}
+.footer p{
+    position:absolute;
+    top:10px;
+    color:white;
+    left:10px;
+}
+a.hover{
+    color:white;
+    background:darkgray;
+    padding:8px;
+}
+/*tab device*/
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+    h1{
+        color:green;
+        font-size:25px;
+    }
+}
+/*mobile device*/
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    h1 {
+        color: blue;
+        font-size: 14px;
+    }
+}
