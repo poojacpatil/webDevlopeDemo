@@ -1,0 +1,60 @@
+<html>
+<head></head>
+<body>
+    <p>
+        Enter a number:<input type="text" id="n1" />
+    </p>
+
+    <p>
+        Enter a number:<input type="text" id="n2" />
+    </p>
+
+    <p>
+        Result:<input type="text" id="n3" />
+    </p>
+
+    <p>
+        <input type="button" value="Addition" onclick="Addition()" />
+        <input type="button" value="Subtract" onclick="Subtract()" />
+        <input type="button" value="Multiplication" onclick="Multiplication()" />
+        <input type="button" value="Division" onclick="Division()" />
+    </p>
+
+    <script>
+        function Addition() {
+           //getElementById method return the html tag
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            //information you will get from html it is string format(textbox)
+            var c = parseInt(a) + parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function Subtract() {
+            //getElementById method return the html tag
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            //information you will get from html it is string format(textbox)
+            var c = parseInt(a) - parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function Multiplication() {
+            //getElementById method return the html tag
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            //information you will get from html it is string format(textbox)
+            var c = parseInt(a) * parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function Division() {
+            //getElementById method return the html tag
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            //information you will get from html it is string format(textbox)
+            var c = parseInt(a) / parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <script>
+        // call(), apply(),bind()
+        const employee = {
+            age: 30,
+           /* fullName: function () {
+                return this.firstname + " " + this.lastname ;
+            }
+        }*/
+            fullName: function (city,country) {
+                return this.firstname + " " + this.lastname+" "+city+" "+country;
+            }
+        }
+        const member = {
+            firstname: "pooja",
+            lastname:"patil"
+        }
+       // document.getElementById("d1").innerHTML = employee.fullName.call(member)
+       //document.getElementById("d1").innerHTML = employee.fullName.call(member, "satara", "India");  //use call function only call one 
+        document.getElementById("d1").innerHTML = employee.fullName.apply(member, ["satara", "India"]); //use apply function call the array
+    </script>
+
+</body>
+</html>

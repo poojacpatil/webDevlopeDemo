@@ -1,0 +1,72 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+    <script>
+
+        function add() {
+
+        }
+
+        var emp ={};           //object declare only
+            emp.Id = 1;
+            emp.Name = "Shrutika";
+        
+        const employee = {     //object declare and initilize value
+            firstname:"pooja",
+            lastname:"patil",
+            age: 23,
+            fullName: function () {                    //call that fuction
+                return this.firstname + " "+this.lastname; 
+            }
+
+        }
+        const product={
+            id:1,
+            name:"mouse",
+            price: 899,
+            DiscountAmount: function () {
+                return this.price * 0.10;
+            },
+            DiscountPrice: function () {
+                return this.price - this.DiscountAmount();
+            },
+            display: function () {
+                return this.id + " " + this.name + " " + this.price;
+            }
+        }
+
+        const student = {
+            RollNo: 1,
+            Name: "priyanka",
+            Science: 90,
+              Maths: 93,
+              English:90,
+            percentage: function () {
+                return (this.Science + this.Maths + this.English) / 300 * 100;
+            },
+            display: function () {
+                return this.RollNo + " " + this.Name + " " + this.percentage();
+            }
+           
+        }
+       // console.log(employee.firstname+  employee["lastname"]);
+       // console.log(product["name"]+  product.price);
+       // console.log(emp.Name);
+
+       // document.getElementById("d1").innerHTML = Object.values(employee); //show only object values
+       // document.getElementById("d1").innerHTML = JSON.stringify(employee);  //show the object in string format
+
+        /*document.getElementById("d1").innerHTML = employee.fullName();*/
+       
+        /*document.getElementById("d1").innerHTML = product.price + " have to display" + product.DiscountAmount();*/
+
+       /* document.getElementById("d1").innerHTML = "product.details=" + product.display(); 
+        document.getElementById("d1").innerHTML = "price after 10% discount=" + product.DiscountAmount();*/
+
+        document.getElementById("d1").innerHTML = student.display();
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<body>
+  <div id="d1"></div>
+    <br />
+    <div id="d2"></div>
+    <script>
+        //promise array
+        var color=["red" , "blue" , "pink"];
+        function display(data) {
+            var text="<ul>";
+            for (let i = 0; i < data.length; i++) {
+                text += "</li>" + data[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("d1").innerHTML = text;
+        }
+        function displayerror(data) {
+            document.getElementById("d2").innerHTML = data;
+        }
+        var promise = new Promise(function (resolve, reject) {
+            if (color != null) {
+               resolve(color);
+             }
+            else {
+            reject("Error in the code");
+            }
+        });
+        promise.then(function (value) {
+            display(value);
+        }).catch(function (error) {
+            displayerror(error);
+        });
+
+    </script>
+
+</body>
+</html>
